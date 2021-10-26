@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add task</title>
+</head>
+<body>
+    <h1 style="color: blue"> AddTask</h1>
+    <form action="listTask.html">
+   Task Name <input type="text" name="addtask" required>
+    <button>Submit</button>
+   <button type="reset">Reset</button><br><br/>
+   <!--description-->
+   <label for="description">Description</label><br>
+   <textarea name="description"id="description" cols="30"rows="3"></textarea>
+   <!--GivenDate-->
+   <label for="dueDate">Deadline Date</label>
+   <input type="date"name="dueDate" id="dueDate"min="2021-10-21"max="2021-11-21">
+   <!--Fixed Date-->
+   <!--select id="dueDate">
+       <option type="time"   value="2021-10-21">Thrusday</option>
+       <option type="time"value="2021-10-22">Friday</option>
+   </select-->
+  <!--Given time--> <label for="time">Time</label>
+   <input type="time"name="time"id="time" min="11:00:00"max="15:00:00">
+   <!--Fixedtime-->
+   <!--select id="duetime">
+       <option value=""disabled>--select time--</option>
+       <option value="11:00:00">11AM</option>
+       <option value="15:00:00">03PM</option>
+   </select-->
+   <label name="priority">Priority</label>
+   <select id="priority" required>
+       <option value="L" selected>Low</option>
+       <option value="M">Medium</option>
+       <option value="H">High</option>
+   </select>
+</form>
+</body>
+</html>
